@@ -1,3 +1,17 @@
+Command: ng add @angular/elements
+
+Below changes are needed manually if we dont use above command
+1. Add the following in angular.json
+  "scripts": [
+              {
+                "input": "node_modules/document-register-element/build/document-register-element.js"
+              }
+            ]
+2. Add the Package.json 
+  "@angular/elements": "^6.1.7",
+  "document-register-element": "^1.7.2"
+
+
 # ExampleApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.4.
